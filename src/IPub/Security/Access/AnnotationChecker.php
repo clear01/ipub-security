@@ -22,8 +22,9 @@ use IPub;
 use IPub\Security\Exceptions;
 use IPub\Security;
 
-class AnnotationChecker extends Nette\Object implements IChecker, ICheckRequirements
+class AnnotationChecker implements IChecker, ICheckRequirements
 {
+	use Nette\SmartObject;
 	/**
 	 * @var NS\User
 	 */

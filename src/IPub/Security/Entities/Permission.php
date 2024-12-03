@@ -8,8 +8,9 @@ use IPub\Security\Entities;
 use IPub\Security\Exceptions;
 
 
-class Permission extends Nette\Object implements IPermission
+class Permission implements IPermission
 {
+	use Nette\SmartObject;
 	/** @var Entities\IResource|NULL */
 	protected $resource;
 

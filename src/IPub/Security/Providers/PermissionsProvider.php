@@ -7,8 +7,9 @@ use IPub\Security\Entities;
 use IPub\Security\Exceptions;
 
 
-class PermissionsProvider extends Nette\Object implements IPermissionsProvider
+class PermissionsProvider implements IPermissionsProvider
 {
+	use Nette\SmartObject;
 	/** @var Entities\Resource[] */
 	private $resources = [];
 

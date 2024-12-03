@@ -19,8 +19,9 @@ use Nette\Application;
 use Nette\Application\UI;
 use Nette\Security as NS;
 
-class LinkChecker extends Nette\Object implements IChecker
+class LinkChecker implements IChecker
 {
+	use Nette\SmartObject;
 	/**
 	 * @var Application\IPresenterFactory
 	 */

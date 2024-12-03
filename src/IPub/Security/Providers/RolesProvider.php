@@ -7,8 +7,9 @@ use IPub\Security\Entities;
 use IPub\Security\Exceptions;
 
 
-class RolesProvider extends Nette\Object implements IRolesProvider
+class RolesProvider implements IRolesProvider
 {
+	use Nette\SmartObject;
 	/** @var Entities\Role[] */
 	private $roles = [];
 

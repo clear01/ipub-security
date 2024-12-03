@@ -23,8 +23,9 @@ use IPub\Security;
 use IPub\Security\Exceptions;
 
 
-class LatteChecker extends Nette\Object implements IChecker
+class LatteChecker implements IChecker
 {
+	use Nette\SmartObject;
 	/**
 	 * @var NS\User
 	 */
